@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(180deg, #451a74, #2d43d2);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Eras ITC";
+}
+/* main container */
+.container {
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+}
+
+#error {
+  color: red;
+  visibility: collapse;
+}
+
+/* generate gradient */
+.generate-gradient {
+  /* border: 1px solid green; */
+  height: 100%;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.generate-gradient h3 {
+  font-size: 50px;
+  color: #451a74;
+}
+
+.generate-gradient input {
+  border: none;
+  width: 70%;
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 8px;
+}
+.generate-gradient input:focus {
+  outline: 2px solid #451a74;
+}
+
+.generate-gradient button {
+  width: 70%;
+  padding: 15px;
+  background-color: #451a74;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.show-color {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.color {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: black;
+  margin-bottom: 10px;
+}
+.show-color-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.show-gradient {
+  /* border: 1px solid green; */
+  height: 100%;
+  flex-basis: 0%;
+  transition: 1s;
+}
